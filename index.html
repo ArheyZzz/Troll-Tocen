@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="theme-color" content="black">
+   <!-- !Bootstrap -->
+   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+   </script> -->
+   <!-- !Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;300;400;500&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet">
+   <!-- ! -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <!-- ! -->
+   <link type="Image/x-icon" href="./favicon.png" rel="icon">
+   <!-- <script defer src="js/script.js" type="module"></script> -->
+   <!-- ! -->
+   <script src="libs/gsap/gsap.min.js" defer></script>
+   <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+   <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+   <!-- ! -->
+   <!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/canvas.js" defer></script>
+   <script src="js/burger.js" defer></script>
+
+
+   <title>Troll Token</title>
+</head>
+
+<body>
+
+
+
+   <header id="header" class="header">
+
+      <div class="container">
+
+         <canvas class="canvas"></canvas>
+
+         <button class="header__burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+         </button>
+
+
+         <nav class="navbar">
+            <ul class="menu">
+               <li class="menu__item">
+                  <a class="menu__link" aria-current="page" href="#">Our mission</a>
+               </li>
+               <li class="menu__item">
+                  <a class="menu__link" href="#">Team</a>
+               </li>
+               <li class="menu__item">
+                  <a class="menu__link" href="#">Tokenomics</a>
+               </li>
+               <li class="menu__item">
+                  <a class="menu__link" href="#">Road map</a>
+               </li>
+               <li class="menu__item">
+                  <a class="menu__link" href="#">Contacts</a>
+               </li>
+            </ul>
+         </nav>
+
+
+         <div class="troll__play">
+            <div class="line__left"></div>
+            <img class="logo" src="img/Logo-01.png" alt="Logo" width="400" height="200" data-bs-toggle="modal"
+               data-bs-target="#myModal">
+            <div class="line__right"></div>
+         </div>
+
+         <div class="contract__block">
+            <div id="contract__title">CONTRACT ADDRESS</div>
+            <div class="contract__items">
+               <div class="line__left1"></div>
+               <p id="contract__address">
+                  0xb3D0BE7980cE684e433E7d15d15ef9eB82223130
+               </p>
+               <div class="line__right2"></div>
+            </div>
+         </div>
+
+
+         <div class="navbar-button">
+            <a href="https://pancakeswap.finance/swap?outputCurrency=0xb3D0BE7980cE684e433E7d15d15ef9eB82223130"
+               class="btn btn-lg text-uppercase" target="_blank">Buy on
+               pancakeswap</a>
+         </div>
+      </div>
+
+   </header>
+
+
+   <section class="mission" id="mission">
+      <div class="container">
+
+         <h1 class="title">One project, uniting creative individuals, <br>
+            holders and advertisers.</h1>
+         <h4 class="descr">We are here to assist emerging artists and marketers, <br> brought together by a
+            shared
+            interest in blockchain <br>technology and art. To rid this field of biases about meme <br>coins, to
+            create a
+            transparent and reliable foundation for <br>educating new professionals and facilitating their<br>
+            interaction
+            with advertisers.</h4>
+
+         <div class="mission__items">
+
+            <div class="mission__card">
+               <img class="logo" src="img/Social-2.png" alt="Social">
+               <h5>Transparency</h5>
+               <p>Our project conducts completely <br> transparent activities. The Troll token <br> has been
+                  created
+                  and
+                  launched using <br> funds collected by a small <br> international community from <br>
+                  different
+                  countries.
+                  Our
+                  website is<br> translated into two languages:<br> Russian and English. We are happy to<br>
+                  welcome
+                  new
+                  holders
+                  and will provide<br> you with any information you are<br> interested in.</p>
+            </div>
+            <div class="mission__card">
+               <img class="logo" src="img/up-2.png" alt="Social">
+               <h5>Marketing strategies</h5>
+               <p>Our marketing strategy is based on <br>promoting the most popular internet <br> trend, which
+                  is
+                  meme
+                  content. We aim<br> to establish an efficient base of artists<br> and creators of graphic
+                  content
+                  using <br>
+                  modern blockchain and AI <br>technologies.<br>
+                  Our artists and marketers are ready to<br> assist in creating advertising content,<br>
+                  effectively
+                  representing your<br> company, and promoting it through<br> native advertising.</p>
+            </div>
+            <div class="mission__card">
+               <img class="logo" src="img/Bounty-2.png" alt="Social">
+               <h5>Branding concepts</h5>
+               <p>To build your brand, we craft vibrant <br> representations of your advertising <br> products
+                  using
+                  cutting-edge AI <br> technologies and graphic software.<br> We gather and unite top
+                  designers,<br>
+                  marketers,
+                  and creative minds.</p>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+   <section class="benefits">
+      <div class="container">
+         <h2 class="benefits__title">Main functionality and benefits for holders</h2>
+         <h4 class="benefits__subtitle">We work hard every day to make life of our holders <br> better and
+            happier.
+         </h4>
+         <div class="benefits__items">
+
+            <div class="benefits__item">
+               <div class="accept__img">
+                  <img src="img/accept.png" alt="accept" class="img">
+               </div>
+               <div class="benefits__descr">
+                  <h5>High quality and reliability</h5>
+                  <p>Our team possesses diverse experience in the crypto industry, investment, and the social
+                     sphere.
+                     It's
+                     precisely for this reason that a model was chosen to create a buyback pool in the event
+                     of a
+                     drop
+                     from
+                     the initial liquidity price. These funds were collected by administrators and placed in
+                     a
+                     separate
+                     wallet. This, in turn, allowed for greater community trust and streamlined the initial
+                     audience
+                     interaction.</p>
+               </div>
+            </div>
+            <div class="benefits__item ">
+               <div class="accept__img">
+                  <img src="img/accept.png" alt="accept" class="img">
+               </div>
+               <div class="benefits__descr">
+                  <h5>Good Support</h5>
+                  <p>Our administrators are located in different time zones, which enables us to provide
+                     technical
+                     support to our users nearly around the clock. We love and value our community and are
+                     committed
+                     to doing our best to justify the trust placed in us.</p>
+               </div>
+            </div>
+            <div class="benefits__item ">
+               <div class="accept__img">
+                  <img src="img/accept.png" alt="accept" class="img">
+               </div>
+               <div class="benefits__descr">
+                  <h5>Participant Rewards</h5>
+                  <p>In our project, there is an automatic reward system for Troll coin holders, amounting to
+                     2% of
+                     all fees. Additionally, we reward creators of creative content and actively encourage
+                     their
+                     initiatives.</p>
+               </div>
+            </div>
+            <div class="benefits__item ">
+               <div class="accept__img">
+                  <img src="img/accept.png" alt="accept" class="img">
+               </div>
+               <div class="benefits__descr">
+                  <h5>Buyback Tokens (super burn)</h5>
+                  <p>The transaction fee 1% used to buyback tokens.
+                     The phrase "buyback" is used in the stock market to denote when a company buys back its
+                     own
+                     stock on the open market, hence increasing the stock's value. When the market is
+                     experiencing
+                     selling, the transaction fees are used to buy back and burn tokens. These purchases not
+                     only add
+                     more value (BNBs) to the liquidity pool but also limit the overall circulating supply of
+                     tokens,
+                     causing the price to rise quickly and avoiding large dumps.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="tokenomics">
+      <div class="container">
+         <div class="tokenomics__block">
+            <div class="tokenomics__img">
+               <img class="boiler__img" src="/img/buul.png" alt="boiler">
+            </div>
+            <div class="text__block">
+               <h3>Tokenomics</h3>
+               <ul>
+                  <li>The initial supply consisted of 1,600,000 Troll tokens, 50% of which were burned after the
+                     project
+                     launch.
+                  </li>
+                  <li>After that, the total emission amounts to 800,000 coins. There is no possibility of
+                     additional
+                     minting.</li>
+                  <li>100.000 tokens are locked for a period of 1 year.</li>
+                  <li>220.000 tokens and 10 BNB were sent to the PancakeSwap pool for liquidity creation and
+                     locked.
+                  </li>
+                  <li>40.000 tokens were allocated for initial marketing, while all remaining tokens were sold
+                     during
+                     the presale.</li>
+                  <li>Currently, 660,000 tokens are in free circulation on the market.</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="rewards">
+      <div class="container">
+         <h2 class="title">Tax fees and rewards</h2>
+         <div class="rewards__items">
+            <div class="rewards__item">
+               <div class="arrow__img">
+                  <img class="arrow" src="img/Sell.png" alt="">
+               </div>
+               <div class="item__descr">
+                  <h3>Sale(or transfer) with a 9% fee</h3>
+                  <p>For a sale 9 transaction, a 9% fee is charged, which is then distributed as follows:</p>
+                  <ul>
+                     <li>5% for marketing, the team, and winners of Troll contests.</li>
+                     <li>2% is distributed among holders, incentivizing long-term investment and eliminating the
+                        need
+                        for creating staking pools.</li>
+                     <li>1% goes to burning, which increases the cost of the token.</li>
+                     <li>1% sent to liquidity, which reduces volatility.</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="rewards__item">
+               <div class="item__descr">
+                  <h3>Purchase with a 7% fee</h3>
+                  <p>For a purchase transaction, a 7% fee is charged, which is then distributed as follows:</p>
+                  <ul>
+                     <li>3% for marketing, the team, and winners of Troll contests.</li>
+                     <li>2% is distributed among holders, incentivizing long-term investment and eliminating the
+                        need
+                        for creating staking pools.</li>
+                     <li>1% goes to burning, which increases the cost of the token.</li>
+                     <li>1% sent to liquidity, which reduces volatility.</li>
+                  </ul>
+               </div>
+               <div class="arrow__img">
+                  <img class="arrow" src="img/Buy.png" alt="">
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <section class="roadmap">
+      <div class="container">
+         <div class="roadmap__image">
+            <img src="img/roadmap3.png" alt="roadmap" class="roadmap__img">
+         </div>
+         <div class="roadmap__title">
+            <h2>Road Map</h2>
+         </div>
+         <div class="roadmap__items">
+            <div class="roadmap__item">
+               <h4 class="roadmap__phase">First Phase:</h4>
+               <ul>
+                  <li class="ready">- Establishment of community on Telegram and Twitter.</li>
+                  <li class="ready">- Fundraising for initial liquidity (8 BNB).</li>
+                  <li class="ready">- Presale for the first project participants.</li>
+                  <li class="ready">- Creation of a website.</li>
+                  <li class="ready">- Setting up liquidity pairs on PancakeSwap and initiating trading.</li>
+                  <li class="ready">- Listing on more than 20 platforms with analytics.</li>
+                  <li>-Listing on major platforms like BSCScan, CoinMarketCap, CoinGecko.</li>
+                  <li>-Review and approval of paid marketing strategies with the community.</li>
+                  <li>-Launching marketing campaigns and paid promotions on social media.</li>
+                  <li>-Creation and sale of the first NFT collection.</li>
+                  <li>-Hosting an Ask Me Anything (AMA) session and considering community proposals for project
+                     development.</li>
+                  <li>- Putting the question of ownership of the contract to community voting.</li>
+               </ul>
+            </div>
+            <div class="roadmap__item">
+               <h4 class="roadmap__phase">Second Phase:</h4>
+               <ul>
+                  <li>- Collaboration and close partnership with major meme projects (list not disclosed until
+                     collaboration is finalized).</li>
+                  <li>- Launching advertising on one of the largest video services with trafficjunky.</li>
+                  <li>- Establishing an informative and educational blog for investors, creators, art designers,
+                     and AI
+                     artists integrated into the blockchain technology field.</li>
+                  <li>- Launching an international joint product with a technological crypto project (project name
+                     not
+                     disclosed until official press release).</li>
+                  <li>- Launching and testing a platform for connecting Art artists (AI designers) with
+                     advertisers in
+                     the crypto sphere.
+                  </li>
+                  <li>- Creating a comprehensive service with educational materials, products for creating and
+                     promoting
+                     high-quality meme projects in the crypto industry.</li>
+                  <li>- Promoting meme advertising to achieve a competitive level with classic advertising.</li>
+                  <li>- Creation and sale of the second NFT collection.</li>
+                  <li>- Hosting an AMA session and considering community proposals for project development.</li>
+               </ul>
+            </div>
+            <div class="roadmap__item">
+               <h4 class="roadmap__phase">Third Phase:</h4>
+               <ul>
+                  <li>- Creating and implementing a platform for connecting meme designers/clients on various
+                     social
+                     networks using Telegram bots and web applications.</li>
+                  <li>- Collaborating and jointly promoting the company with three major meme projects to increase
+                     recognition of our offered services.</li>
+                  <li>- Establishing a startup academy for training and enhancing the skills of professionals in
+                     creating advertising content in the crypto industry.</li>
+                  <li>- Creation and sale of the third NFT collection.</li>
+                  <li>- Hosting an AMA session and considering community proposals for project development.</li>
+               </ul>
+            </div>
+            <div class="roadmap__item">
+               <h4 class="roadmap__phase">Fourth Phase:</h4>
+               <ul>
+                  <li>- Listing on 1-2 medium or large level CEX exchanges.</li>
+                  <li>- Forming a comprehensive management council for the project's marketing strategy.</li>
+                  <li>- Transitioning the MUBELЕ (MEMECOIN University for Blockchain Education, Learning, and
+                     Entrepreneurship) platform into autonomous operation that doesn't require community
+                     management.
+                  </li>
+                  <li>- Creation and sale of the fourth NFT collection.</li>
+                  <li>- Hosting an AMA session and considering community proposals for project development.</li>
+                  <li>- Developing new marketing technologies in the advertising realm using meme content.</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <section class="whywe">
+      <div class="container">
+         <h2 class="title">WHY IS TROLL THE FUTURE ROCKET?</h2>
+         <div class="whywe__item">
+            <div class="rocket__img"><img src="img/rocket.png" alt="rocket" class="rocket"></div>
+            <div class="whywe__descr">
+               Our team has a clear development plan, achievements in marketing and managing crypto projects.
+               All our
+               actions are transparent, and the development concept and key decisions are made by the community
+               through
+               voting. This puts us head and shoulders above most crypto startups, builds trust among the
+               community and new
+               holders. We have a clear understanding of our tasks and believe that the main asset and
+               guarantee of any
+               company's success are the people working in it. We don't separate the project team from the
+               holder
+               community, allowing us to develop our project together.
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <section class="partners">
+      <div class="container">
+         <h2 class="partners__title">Our partners & platform</h2>
+         <div class="partners__subtitle">Below are the companies that do business with us or the sites where we are
+            located.
+         </div>
+         <div class="partners__troll"><img src="img/partners.jpg" alt="partners" class="troll"></div>
+
+         <div class="partners__items__top">
+            <div class="partner__logo">
+               <a href="https://coinmarketcap.com/dexscan/bsc/0x0b7e32e71d57f63513e009fba8b28138087a5f70/"
+                  target="_blank"> <img src="img/Market.png" alt="Market" class="partner__img">
+               </a>
+            </div>
+
+            <div class="partner__logo">
+               <a href="https://www.geckoterminal.com/bsc/pools/0x0b7e32e71d57f63513e009fba8b28138087a5f70"
+                  target="_blank">
+                  <img src="img/Gecko-terminal.png" alt="Gecko" class="partner__img"></a>
+            </div>
+
+            <div class="partner__logo">
+               <a href="https://pancakeswap.finance/swap?outputCurrency=0xb3D0BE7980cE684e433E7d15d15ef9eB82223130"
+                  target="_blank"> <img src="img/Pancake.png" alt="Pancake" class="partner__img">
+               </a>
+            </div>
+
+            <div class="partner__logo">
+               <a href="https://www.dextools.io/app/en/bnb/pair-explorer/0x0b7e32e71d57f63513e009fba8b28138087a5f70"
+                  target="_blank"> <img src="img/tools.png" alt="tools" class="partner__img">
+               </a>
+            </div>
+         </div>
+
+         <div class="partners__items__bottom">
+            <div class="partner__logo">
+               <a href="https://www.dexview.com/bsc/0xb3D0BE7980cE684e433E7d15d15ef9eB82223130" target="_blank">
+                  <img src="img/View.png" alt="View" class="partner__img">
+               </a>
+            </div>
+            <div class="partner__logo">
+               <a href="https://bscscan.com/address/0xb3d0be7980ce684e433e7d15d15ef9eb82223130" target="_blank">
+                  <img src="img/bscscan.png" alt="" class="partner__img">
+               </a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="team">
+      <div class="container">
+         <h2 class="title">WHY IS TROLL THE FUTURE ROCKET?</h2>
+         <div class="team_descr">
+            Our team of trolls was founded in England by an international community under the guidance of
+            Andrew_Laserman. However, our team members are located in different countries, and our team is
+            continuously
+            expanding. We strive to bring together artists and content creators from various countries to
+            collaborate
+            with advertisers worldwide. All significant decisions are made by the community through voting in our
+            main
+            Telegram group. Additionally, the contract creator will relinquish ownership after our token is added to
+            all
+            major platforms: CoinMarketCap and CoinGecko.
+         </div>
+         <div class="team__items">
+            <div class="team__item">
+               <img class="team__img" src="img/founder.jpg" alt="founder">
+               <h3 class="team__name">Andrew_Laserman</h3>
+               <p class="team__job__title">Founder & Art Director</p>
+               <div class="team__social">
+                  <a href="https://t.me/Andrew_Laserman" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                  <a href="https://twitter.com/Andrew_tomsk" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.facebook.com/Andrewlaserman" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+               </div>
+            </div>
+
+            <div class="team__item">
+               <img class="team__img" src="img/marketing.jpg" alt="marketing">
+               <h3 class="team__name">Troll Skillboz (Dmitry)</h3>
+               <p class="team__job__title">Marketing Director</p>
+               <div class="team__social">
+                  <a href="https://t.me/Trollskillboz" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                  <a href="https://twitter.com/DingiestG" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+               </div>
+            </div>
+
+            <div class="team__item">
+               <img class="team__img" src="img/community.png" alt="marketing">
+               <h3 class="team__name">DMITRY (NEVER DM FIRST)</h3>
+               <p class="team__job__title">Community Support</p>
+               <div class="team__social">
+                  <a href="https://t.me/dingiestg" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <footer class="footer">
+      <div class="container">
+         <div class="buy__block">
+            <div class="buy-button">
+               <a href="https://pancakeswap.finance/swap?outputCurrency=0xb3D0BE7980cE684e433E7d15d15ef9eB82223130"
+                  class="btn btn-lg text-uppercase" target="_blank">Buy on
+                  pancakeswap</a>
+            </div>
+
+            <div class="contract__items">
+               <div class="line__left1"></div>
+               <p id="contract__footer">
+                  0xb3D0BE7980cE684e433E7d15d15ef9eB82223130
+               </p>
+               <div class="line__right2"></div>
+            </div>
+         </div>
+
+         <div class="social__block">
+            <a href="https://t.me/We_CryptoTrolls" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://twitter.com/We_CryptoTrolls" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="mailto:mrtroll@troll-token.com"><i class="fa-solid fa-envelope"></i></a>
+         </div>
+         <div class="contact__block">
+            <p>© 2023 Troll Token community</p>
+            <a target="_blank" href="https://drive.google.com/file/d/1_n1g0I7z6mNqAXFuXItmuJdPUdrOwz-G/view">Crypto
+               Troll - White
+               paper</a>
+            <p>Email: mrtroll@troll-token.com</p>
+         </div>
+      </div>
+   </footer>
+
+   <!-- ! Modal -->
+   <!--    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h1 class="modal-title fs-5" id="exampleModalLabel">Troll Token</h1>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class='embed-container'><iframe src='https://www.youtube.com/embed//w1pKOjIYyIQ' frameborder='0'
+                     allowfullscreen></iframe></div>
+            </div>
+         </div>
+      </div>
+   </div> -->
+</body>
+
+</html>

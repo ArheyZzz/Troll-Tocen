@@ -1,0 +1,1173 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+
+/* :root {
+   --index: calc(1vw + 1vh);
+   --color--main: #e8c180;
+   --color-text: #cdc6c3;
+}
+ */
+html {
+   /* width: 100%; */
+   /* max-width: 100%; */
+   overflow-x: hidden;
+
+}
+
+body {
+   font-family: 'Tinos', serif;
+   color: #eee;
+   background-image: url(/img/bg4.png);
+   /* width: 100%; */
+   /* max-width: 100%; */
+   width: 100vw;
+   overflow-x: hidden;
+
+}
+
+
+.header {
+   padding: 100px 0;
+}
+
+.container {
+   width: 2000px;
+   margin: 0 auto;
+   padding: 0 8vw;
+}
+
+.canvas {
+   position: absolute;
+   width: 100vw;
+   height: 110vh;
+   top: 0;
+   left: 0;
+   z-index: -1;
+}
+
+.menu {
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+   list-style: none;
+   font-size: 20px;
+}
+
+.menu__link {
+   color: #e8c180;
+   text-decoration: none;
+   font-family: 'MuseoModerno', sans-serif;
+   font-weight: 700;
+   padding: 0 70px;
+   transition: all 0.3s ease;
+}
+
+.menu__link:hover {
+   color: #eee;
+   text-shadow: 0px 0px 5px rgba(70, 206, 0, 0.76);
+}
+
+/* ! Бургер */
+.header__burger {
+   display: none;
+   position: relative;
+   width: 40px;
+   height: 40px;
+   border: none;
+   background-color: transparent;
+   z-index: 2;
+}
+
+.header__burger span {
+   position: absolute;
+   width: 40px;
+   height: 4px;
+   background-color: #e8c180;
+   left: 5px;
+   transition: all 0.5s;
+}
+
+.header__burger span:nth-child(1) {
+   transform: translateY(-10px);
+}
+
+.header__burger span:nth-child(3) {
+   transform: translateY(10px);
+}
+
+.header.open .header__burger span:nth-child(2) {
+   opacity: 0;
+}
+
+.header.open .header__burger span {
+   background-color: #eee;
+   box-shadow: 0px 0px 5px rgba(70, 206, 0, 0.76);
+}
+
+.header.open .header__burger span:nth-child(1) {
+   transform: translateY(0);
+   rotate: 45deg;
+}
+
+.header.open .header__burger span:nth-child(3) {
+   transform: translateY(0);
+   rotate: -45deg;
+}
+
+/* !------------ */
+.troll__play {
+   margin: 0 auto;
+   margin-top: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.troll__play .logo:hover {
+   cursor: pointer;
+}
+
+.line__left {
+   height: 3px;
+   width: 500px;
+   background-color: #e8c180;
+   margin-left: 60px;
+}
+
+.line__right {
+   height: 3px;
+   width: 500px;
+   background-color: #e8c180;
+}
+
+
+.contract__block {
+   margin-top: 200px;
+}
+
+#contract__title {
+   transition: all 0.3s ease;
+   max-width: 200px;
+   max-height: 100px;
+   margin: 0 auto;
+   padding: 10px 15px;
+   color: black;
+   background-color: #e8c180;
+   font-weight: bold;
+   border-radius: 5px;
+}
+
+#contract__address,
+#contract__footer {
+   transition: all 0.3s ease;
+   margin-top: 22px;
+   color: #e8c180;
+   font-weight: normal;
+   font-size: 16px;
+   letter-spacing: .1em;
+}
+
+#contract__address:hover,
+#contract__title:hover,
+#contract__footer:hover {
+   color: #eee;
+   text-shadow: 0px 0px 5px rgba(70, 206, 0, 0.76);
+   cursor: pointer;
+}
+
+.contract__items {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.contract__items .line__left1 {
+   height: 2px;
+   width: 250px;
+   background-color: #e8c180;
+   margin-right: 20px;
+   margin-top: 20px;
+}
+
+.contract__items .line__right2 {
+   height: 2px;
+   width: 250px;
+   background-color: #e8c180;
+   margin-left: 20px;
+   margin-top: 20px;
+}
+
+.navbar-button {
+   margin-top: 200px;
+   display: flex;
+}
+
+.navbar-button .btn {
+   text-decoration: none;
+   text-transform: uppercase;
+   text-align: center;
+   transition: all 0.3s ease;
+   width: 250px;
+   max-height: 100px;
+   margin: 0 auto;
+   padding: 10px 15px;
+   color: black;
+   background-color: #e8c180;
+   font-weight: bold;
+   border-radius: 5px;
+}
+
+.navbar-button .btn:hover {
+   color: #eee;
+   background-color: #e8c180;
+   text-shadow: 0px 0px 5px rgba(70, 206, 0, 0.76);
+
+}
+
+/* ------------------------------- */
+.mission {
+   padding: 100px 0;
+   text-align: center;
+   text-shadow: .5px .5px 1px #e8c180;
+}
+
+.mission .title {
+   font-weight: 700;
+   font-size: 32px;
+   text-transform: uppercase;
+}
+
+.mission .descr {
+   margin-top: 100px;
+   font-weight: 400;
+   font-size: 26px;
+}
+
+.mission__items {
+   display: flex;
+   margin-top: 70px;
+   justify-content: center;
+   font-size: 16px;
+   text-align: left;
+}
+
+.mission__card {
+   border: 1px solid #e8c180;
+   /* box-shadow: 0px 0px 5px rgba(70, 206, 0, 0.76); */
+   padding: 20px 40px 80px;
+   margin: 0 15px;
+   font-family: 'MuseoModerno', sans-serif;
+}
+
+.mission__card h5 {
+   font-size: 18px;
+   text-align: center;
+   margin-top: 50px;
+}
+
+.mission__card .logo {
+   height: 70px;
+}
+
+.mission__card p {
+   margin-top: 30px;
+   font-weight: 300;
+}
+
+
+/* -------------------------------------- */
+.benefits {
+   padding: 100px 0;
+   text-align: center;
+   /* text-shadow: .5px .5px 1px #e8c180; */
+}
+
+
+.benefits__title {
+   font-weight: 700;
+   font-size: 32px;
+   text-transform: uppercase;
+}
+
+.benefits__subtitle {
+   margin-top: 100px;
+   font-weight: 400;
+   font-size: 26px;
+}
+
+.benefits__items {
+   margin-top: 70px;
+   text-align: left;
+   max-width: 60%;
+   margin: 0 auto;
+}
+
+.benefits__item {
+   margin-top: 70px;
+   display: flex;
+   justify-content: center;
+}
+
+.benefits__descr h5 {
+   margin-top: 6px;
+   margin-left: 30px;
+   font-size: 22px;
+   font-weight: 400;
+}
+
+.benefits__descr p {
+   margin-top: 20px;
+   font-size: 18px;
+   margin-left: 30px;
+   font-weight: 300;
+}
+
+/* --------------------------- */
+.tokenomics {
+   padding: 100px 0;
+   text-align: center;
+   color: #eee;
+   /* text-shadow: .5px .5px 1px #e8c180; */
+}
+
+.tokenomics__block {
+   display: flex;
+   justify-content: center;
+   color: #eee;
+}
+
+.boiler__img {
+   width: 600px;
+   /*    position: relative;
+   left: 100px; */
+}
+
+.text__block {
+   position: relative;
+   /* left: 100px; */
+   max-width: 40%;
+}
+
+.text__block h3 {
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 30px;
+   font-weight: 700;
+}
+
+.text__block ul {
+   margin-top: 30px;
+   padding-left: 50px;
+   font-size: 22px;
+   text-align: left;
+   line-height: 40px;
+}
+
+.rewards {
+   padding: 100px 0;
+}
+
+.title {
+   text-align: center;
+}
+
+.rewards__items {
+   display: flex;
+   justify-content: center;
+}
+
+.rewards__item {
+   display: flex;
+   justify-content: center;
+   margin-top: 100px;
+   width: 500px;
+
+}
+
+.arrow {
+   height: 100px;
+   border: #e8c180 solid 3px;
+
+}
+
+.item__descr {
+   margin-left: 30px;
+}
+
+.item__descr p,
+.item__descr ul {
+   font-size: 22px;
+   padding: 0 15px;
+}
+
+.roadmap {
+   padding: 0 0 100px;
+   text-align: center;
+}
+
+
+.roadmap__image {
+   /* object-fit: contain; */
+   display: flex;
+   justify-content: center;
+}
+
+.roadmap__title {
+   margin-top: -40px;
+}
+
+.roadmap__items {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 80px;
+}
+
+.roadmap__item {
+   width: 25%;
+   padding: 0 10px;
+   text-align: left;
+}
+
+.roadmap__phase {
+   text-align: center;
+}
+
+.roadmap__item li {
+   margin-top: 16px;
+   list-style: none;
+}
+
+.roadmap__item ul li:before {
+   content: '';
+   display: inline-block;
+   height: 25px;
+   width: 35px;
+   background-image: url(/img/hourglassr.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   margin-left: -35px;
+   position: relative;
+   top: 8px;
+}
+
+ul li.ready:before {
+   background-image: url(/img/star.png);
+   left: -6px;
+}
+
+.whywe {
+   padding: 100px 0 0;
+   text-align: center;
+}
+
+.whywe .title {
+   font-size: 32px;
+}
+
+.whywe__item {
+   margin-top: 100px;
+   display: flex;
+}
+
+.rocket__img {
+   width: 50%;
+   opacity: 50%;
+}
+
+
+.whywe__descr {
+   margin: 0 auto;
+   margin-top: 140px;
+   text-align: left;
+   max-width: 40%;
+   font-size: 24px;
+   position: relative;
+   right: 100px;
+}
+
+.partners {
+   padding: 100px 0;
+   text-align: center;
+}
+
+.partners__title {
+   text-transform: uppercase;
+   font-size: 32px;
+}
+
+.partners__subtitle {
+   margin-top: 60px;
+   font-size: 28px;
+}
+
+.partners__items__top {
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+
+}
+
+.partners__items__bottom {
+   display: flex;
+   justify-content: center;
+   margin-top: 3px;
+}
+
+.partners__items__bottom a {
+   padding: 0 130px;
+}
+
+.troll {
+   margin-top: 50px;
+   height: 20vw;
+}
+
+.partner__img {
+   width: 312px;
+   height: 106px;
+}
+
+
+.team {
+   padding: 100px 0;
+   text-align: center;
+}
+
+.title {
+   text-transform: uppercase;
+   font-size: 32px;
+}
+
+.team_descr {
+   margin: 0 auto;
+   margin-top: 100px;
+   font-size: 26px;
+   max-width: 60%;
+}
+
+.team__items {
+   margin: 0 auto;
+   margin-top: 100px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.team__item {
+   width: 33%;
+}
+
+.team__img {
+   height: 150px;
+   border-radius: 50%;
+}
+
+.team__name {
+   margin-top: 20px;
+   font-size: 22px;
+}
+
+.team__job__title {
+   margin-top: 15px;
+}
+
+.team__social {
+   margin-top: 10px;
+}
+
+.team__social i {
+   color: #e8c180;
+   font-size: 30px;
+   margin: 5px 10px;
+}
+
+.footer {
+   margin: 0 auto;
+   padding: 100px 0 50px;
+   text-align: center;
+}
+
+
+.buy-button a {
+   text-decoration: none;
+   text-transform: uppercase;
+   text-align: center;
+   transition: all 0.3s ease;
+   width: 250px;
+   max-height: 100px;
+   margin: 0 auto;
+   padding: 10px 15px;
+   color: black;
+   background-color: #e8c180;
+   font-weight: bold;
+   border-radius: 5px;
+}
+
+.buy-button a:hover {
+   color: #eee;
+   background-color: #e8c180;
+   text-shadow: 0px 0px 5px rgba(70, 206, 0, 0.76);
+
+}
+
+
+.contract__items {
+   margin-top: 20px;
+   color: #e8c180;
+}
+
+
+.social__block {
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+   font-size: 50px;
+}
+
+.social__block i {
+   color: #e8c180;
+   margin: 0 25px;
+}
+
+
+
+.contact__block {
+   margin-top: 30px;
+   padding: 0 40px;
+   display: flex;
+   justify-content: center;
+   font-size: 20px;
+}
+
+.contact__block a {
+   padding: 0 100px;
+}
+
+.contact__block a {
+   text-decoration: none;
+   color: #eee;
+   cursor: pointer;
+}
+
+.contact__block a:hover {
+   color: #eee;
+   text-shadow: 0px 0px 5px rgba(70, 206, 0, 0.76);
+}
+
+#contract__footer {
+   cursor: pointer;
+}
+
+@media (max-width: 1920px) {
+   .container {
+      width: 1600px;
+   }
+
+   .header {
+      padding: 60px 0 100px;
+   }
+
+   .troll__play {
+      margin-top: 80px;
+   }
+
+   .contract__block {
+      margin-top: 150px;
+   }
+
+   .whywe__descr {
+      right: 0;
+   }
+
+   .roadmap__item {
+      width: 23%;
+   }
+
+}
+
+@media (max-width: 1600px) {
+   .container {
+      width: 1400px;
+   }
+
+   .boiler__img {
+      width: 500px;
+   }
+
+   .menu__link {
+      padding: 0 50px;
+   }
+
+   .rocket__img {
+      width: 40%;
+   }
+
+
+   .whywe__descr {
+      right: -120px;
+   }
+
+   .header,
+   .mission,
+   .benefits,
+   .tokenomics,
+   .partners,
+   .team {
+      padding: 80px 0;
+   }
+
+   .whywe,
+   .rewards {
+      padding: 80px 0 0;
+   }
+
+   .roadmap {
+      padding: 0 0 80px;
+   }
+
+   .footer {
+      padding: 40px 0 40px;
+   }
+}
+
+@media (max-width: 1280px) {
+   .container {
+      width: 1200px;
+      padding: 0;
+   }
+
+   .rewards,
+   .whywe,
+   .partners {
+      padding: 0;
+   }
+
+   .whywe__item {
+      margin-top: 50px;
+   }
+
+   .whywe__descr {
+      right: -90px;
+   }
+}
+
+@media (max-width: 1024px) {
+   .container {
+      width: 960px;
+   }
+
+   .menu__link {
+      padding: 0 40px;
+   }
+
+   .benefits__items {
+      max-width: 80%;
+   }
+
+   .roadmap__img {
+      width: 1600px;
+   }
+
+   .roadmap__item {
+      width: 22%;
+   }
+
+   ul li.ready:before {
+      left: 2;
+   }
+
+   .whywe__item {
+      display: block;
+   }
+
+   .rocket__img .rocket {
+      width: 500px;
+      position: relative;
+      left: 180px;
+   }
+
+   .whywe__descr {
+      max-width: 80%;
+      position: relative;
+      margin-top: 20px;
+      right: 0;
+   }
+
+   .partners {
+      padding: 80px 0 0;
+   }
+
+   .troll {
+      margin-top: 50px;
+      height: 35vw;
+   }
+
+   .partners__items__top {
+      display: block;
+   }
+
+   .partners__items__bottom {
+      display: block;
+   }
+
+   .team {
+      padding: 50px 0;
+   }
+
+   .team_descr {
+      margin-top: 50px;
+      max-width: 80%;
+   }
+
+   .team__items {
+      margin-top: 50px;
+   }
+
+   .contact__block {
+      padding: 0;
+   }
+
+}
+
+@media (max-width: 768px) {
+   .container {
+      width: 740px;
+   }
+
+   .menu__link {
+      padding: 0 20px;
+   }
+
+   .mission__items {
+      display: block;
+      text-align: center;
+      padding: 0 20px;
+   }
+
+   .mission__card {
+      margin-top: 40px;
+   }
+
+   .mission__card .logo {
+      height: 140px;
+   }
+
+   .mission__card h5 {
+      font-size: 26px;
+   }
+
+   .mission__card p {
+      font-size: 22px;
+   }
+
+   .benefits {
+      padding: 0 0 80px;
+   }
+
+   .benefits__items {
+      max-width: 80%
+   }
+
+   .tokenomics {
+      padding: 0 0 80px;
+   }
+
+   .tokenomics__block {
+      display: block;
+      text-align: center;
+   }
+
+   .tokenomics__block .text__block {
+      margin-top: 50px;
+      max-width: 80%;
+      margin-left: 70px;
+   }
+
+   .rewards .rewards__item {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+   }
+
+   .rewards__item .item__descr,
+   .rewards__item .arrow {
+      margin: 15px 0;
+   }
+
+   .roadmap__img {
+      width: 1200px;
+   }
+
+   .roadmap__items {
+      display: block;
+      margin-top: 50px;
+      text-align: center;
+   }
+
+   .roadmap__item {
+      width: 80%;
+      position: relative;
+      left: 90px;
+      margin-top: 50px;
+   }
+
+   .roadmap__title {
+      margin-top: -10px;
+      font-size: 28px;
+
+   }
+
+   .roadmap__phase {
+      margin-top: -10px;
+      position: relative;
+      right: 18px;
+      font-size: 26px;
+   }
+
+   .roadmap__item ul {
+      margin-top: 30px;
+      font-size: 20px;
+   }
+
+   .whywe__item {
+      display: block;
+      text-align: center;
+      align-items: center;
+   }
+
+   .rocket__img .rocket {
+      width: 500px;
+      position: relative;
+      left: 80px;
+   }
+
+   .whywe__descr {
+      max-width: 80%;
+      position: relative;
+      margin-top: 20px;
+      right: 0;
+   }
+
+   .troll {
+      margin-top: 50px;
+      height: 35vw;
+   }
+
+   .footer {
+      padding: 20px 0 20px;
+   }
+
+   .contact__block {
+      margin-top: 50px;
+      display: block;
+      font-size: 16px;
+   }
+
+   .contact__block a {
+      position: relative;
+      bottom: 50px;
+   }
+
+}
+
+@media (max-width: 480px) {
+   .header.open .navbar {
+      transform: translateX(100%);
+   }
+
+   .container {
+      width: 460px;
+   }
+
+   #header {
+      padding: 10px 0 50px;
+   }
+
+   .header__burger {
+      display: block;
+   }
+
+   .navbar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 200px;
+      left: -200px;
+      padding: 50px 20px 20px 20px;
+      transition: transform .5s;
+   }
+
+   .menu {
+      display: block;
+   }
+
+   .menu__link {
+      color: #e8c180;
+      font-size: 21px;
+      display: block;
+      padding: 8px 0;
+   }
+
+   .troll__play {
+      margin-top: 200px;
+   }
+
+   .contract__block {
+      margin-top: 50px;
+   }
+
+   .navbar-button {
+      margin-top: 100px;
+   }
+
+   .mission .title {
+      font-size: 24px;
+   }
+
+   .mission .descr {
+      margin-top: 50px;
+      font-weight: 400;
+      font-size: 18px;
+   }
+
+   .mission__card h5 {
+      font-size: 24px;
+   }
+
+   .mission__card p {
+      font-size: 20px;
+   }
+
+   .benefits {
+      padding: 0 0 50px;
+   }
+
+   .benefits__title {
+      font-size: 24px;
+      padding: 0 2px;
+   }
+
+   .benefits__subtitle {
+      margin-top: 50px;
+      font-size: 22px;
+      padding: 0 2px;
+   }
+
+   .benefits__item {
+      margin-top: 50px;
+   }
+
+   .boiler__img {
+      width: 400px;
+   }
+
+   .text__block h3 {
+      font-size: 26px;
+      position: relative;
+      left: 32px;
+   }
+
+   .tokenomics__block .text__block {
+      margin-top: 50px;
+      max-width: 80%;
+      margin-left: 10px;
+   }
+
+   .rewards {
+      max-width: 440px;
+   }
+
+   .rewards .title {
+      font-size: 26px;
+   }
+
+   .rewards__items {
+      display: block;
+      width: 400px;
+   }
+
+   .item__descr h3 {
+      text-transform: uppercase;
+      font-size: 24px;
+      margin-top: 40px;
+      color: #e8c180;
+   }
+
+   .item__descr p {
+      margin-top: 40px;
+      text-align: left;
+   }
+
+   .item__descr ul {
+      font-size: 22px;
+      padding: 0px 40px;
+   }
+
+   .roadmap__image .roadmap__img {
+      width: 700px;
+   }
+
+   .roadmap__items {
+      position: relative;
+      right: 26px;
+   }
+
+   .whywe .title {
+      font-size: 26px;
+   }
+
+   .rocket__img .rocket {
+      width: 400px;
+      left: 0px;
+   }
+
+   .whywe__descr {
+      font-size: 22px;
+   }
+
+   .partners__title {
+      font-size: 26px;
+   }
+
+   .partners__subtitle {
+      margin-top: 50px;
+      font-size: 22px;
+   }
+
+   .troll {
+      margin-top: 40px;
+      height: 38vw;
+   }
+
+   .partners__items__bottom {
+      position: relative;
+      right: 55px;
+   }
+
+   .title {
+      font-size: 26px;
+   }
+
+   .team__items {
+      display: block;
+   }
+
+   .team__item {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 20px;
+   }
+
+   .team_descr {
+      font-size: 22px;
+      max-width: 80%;
+   }
+
+}
+
+
+@media (max-width: 320px) {}
