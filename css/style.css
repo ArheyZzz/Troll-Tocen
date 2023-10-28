@@ -5,15 +5,8 @@
 
 }
 
-/* :root {
-   --index: calc(1vw + 1vh);
-   --color--main: #e8c180;
-   --color-text: #cdc6c3;
-}
- */
+
 html {
-   /* width: 100%; */
-   /* max-width: 100%; */
    overflow-x: hidden;
 
 }
@@ -21,12 +14,9 @@ html {
 body {
    font-family: 'Tinos', serif;
    color: #eee;
-   background-image: url(/img/bg4.png);
-   /* width: 100%; */
-   /* max-width: 100%; */
+   background-image: url(../img/bg.png);
    width: 100vw;
    overflow-x: hidden;
-
 }
 
 
@@ -103,11 +93,6 @@ body {
    opacity: 0;
 }
 
-.header.open .header__burger span {
-   background-color: #eee;
-   box-shadow: 0px 0px 5px rgba(70, 206, 0, 0.76);
-}
-
 .header.open .header__burger span:nth-child(1) {
    transform: translateY(0);
    rotate: 45deg;
@@ -125,6 +110,7 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
+   transition: all 0.3s ease;
 }
 
 .troll__play .logo:hover {
@@ -412,7 +398,7 @@ body {
 
 
 .roadmap__image {
-   /* object-fit: contain; */
+
    display: flex;
    justify-content: center;
 }
@@ -428,7 +414,7 @@ body {
 }
 
 .roadmap__item {
-   width: 25%;
+   width: 24%;
    padding: 0 10px;
    text-align: left;
 }
@@ -447,16 +433,16 @@ body {
    display: inline-block;
    height: 25px;
    width: 35px;
-   background-image: url(/img/hourglassr.png);
+   background-image: url(../img/hourglassr.png);
    background-size: contain;
    background-repeat: no-repeat;
-   margin-left: -35px;
+   margin-left: -30px;
    position: relative;
    top: 8px;
 }
 
 ul li.ready:before {
-   background-image: url(/img/star.png);
+   background-image: url(../img/star.png);
    left: -6px;
 }
 
@@ -1013,7 +999,7 @@ ul li.ready:before {
    }
 
    .troll__play {
-      margin-top: 200px;
+      margin-top: 100px;
    }
 
    .contract__block {
@@ -1032,6 +1018,10 @@ ul li.ready:before {
       margin-top: 50px;
       font-weight: 400;
       font-size: 18px;
+   }
+
+   .mission__card {
+      padding: 20px 40px;
    }
 
    .mission__card h5 {
@@ -1170,4 +1160,282 @@ ul li.ready:before {
 }
 
 
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+   .container {
+      width: 320px;
+   }
+
+   #header {
+      padding: 10px 0 50px;
+   }
+
+   .troll__play {
+      margin-top: 50px;
+      position: relative;
+      right: 42px;
+   }
+
+   .troll__play .logo {
+      width: 300px;
+      height: 150px;
+   }
+
+   .contract__block {
+      margin-top: 100px;
+   }
+
+   #contract__address,
+   #contract__footer {
+      font-size: 12px;
+   }
+
+   .mission {
+      padding: 60px 0;
+   }
+
+   .mission .title {
+      font-size: 20px;
+   }
+
+   .mission .descr {
+      margin-top: 20px;
+      font-weight: 300;
+      font-size: 13px;
+   }
+
+   .mission__items {
+      padding: 0px 5px;
+      margin-top: 40px;
+   }
+
+   .mission__card {
+      padding: 20px 5px;
+   }
+
+   .mission__card .logo {
+      height: 110px;
+   }
+
+   .mission__card h5 {
+      font-size: 22px;
+      margin-top: 0px;
+   }
+
+   .mission__card p {
+      font-size: 14px;
+      margin-top: 10px;
+   }
+
+   .benefits__title {
+      font-size: 20px;
+   }
+
+   .benefits__subtitle {
+      margin-top: 20px;
+      font-size: 18px;
+      padding: 0 5px;
+   }
+
+   .benefits__item {
+      margin-top: 30px;
+   }
+
+   .accept__img .img {
+      height: 30px;
+      position: relative;
+      left: 20px;
+   }
+
+   .benefits__descr h5 {
+      margin-top: 6px;
+      text-align: left;
+      font-size: 20px;
+      padding: 0;
+   }
+
+   .benefits__descr p {
+      margin-top: 20px;
+      font-size: 16px;
+      margin-left: 0;
+      position: relative;
+      width: 300px;
+      right: 10px;
+   }
+
+   .boiler__img {
+      width: 300px;
+   }
+
+   .tokenomics {
+      padding: 0 0 40px;
+   }
+
+   .tokenomics__block .text__block {
+      margin-top: 30px;
+      max-width: 95%;
+      margin-left: 10px;
+      font-size: 22px;
+      right: 15px;
+   }
+
+   .text__block ul {
+      margin-top: 20px;
+      padding-left: 30px;
+      font-size: 18px;
+      text-align: left;
+      line-height: 20px;
+   }
+
+   .rewards .title {
+      font-size: 22px;
+   }
+
+   .rewards .rewards__item {
+      margin-top: 0px;
+      text-align: left;
+      width: 310px;
+   }
+
+   .rewards__item .arrow {
+      margin: 20px 100px;
+
+   }
+
+   .item__descr h3 {
+      font-size: 16px;
+      margin-top: 0px;
+      padding-left: 10px;
+   }
+
+   .item__descr p {
+      margin-top: 16px;
+
+      padding-left: 10px;
+      font-size: 18px;
+   }
+
+   .item__descr ul {
+      font-size: 16px;
+      padding: 0px 10px;
+      text-align-last: left;
+   }
+
+   .roadmap {
+      padding: 0 0 40px;
+   }
+
+   .roadmap__image .roadmap__img {
+      width: 450px;
+      position: relative;
+      right: 16px;
+      z-index: -1;
+   }
+
+   .roadmap__title {
+      margin-top: -10px;
+      font-size: 20px;
+   }
+
+   .roadmap__items {
+      right: 55px;
+   }
+
+   .roadmap__phase {
+      margin-top: -30px;
+      position: relative;
+      right: 5px;
+      font-size: 18px;
+   }
+
+   .roadmap__item ul {
+      margin-top: 10px;
+      font-size: 20px;
+      font-size: 16px;
+   }
+
+   .roadmap__item li {
+      margin-top: 5px;
+   }
+
+   .whywe__item {
+      margin-top: 20px;
+   }
+
+   .whywe .title {
+      font-size: 20px;
+   }
+
+   .rocket__img .rocket {
+      width: 300px;
+   }
+
+   .whywe__descr {
+      margin-top: 0;
+      max-width: 95%;
+      font-size: 16px;
+   }
+
+   .partners {
+      padding: 50px 0 0;
+   }
+
+   .partners__title {
+      font-size: 20px;
+   }
+
+   .partners__subtitle {
+      margin-top: 20px;
+      font-size: 18px;
+   }
+
+   .troll {
+      margin-top: 20px;
+   }
+
+   .partners__items__top {
+      margin-top: 0;
+   }
+
+   .partners__items__bottom {
+      right: 90px;
+   }
+
+   .partner__img {
+      width: 245px;
+      height: 70px;
+   }
+
+   .team {
+      padding: 30px 0;
+   }
+
+   .title {
+      font-size: 20px;
+   }
+
+   .team_descr {
+      font-size: 18px;
+      max-width: 90%;
+      margin-top: 20px;
+      text-align: left;
+   }
+
+   .team__items {
+      margin-top: 30px;
+   }
+
+   .social__block {
+      font-size: 30px;
+   }
+
+   .contact__block {
+      font-size: 12px;
+   }
+
+   .contact__block a {
+      padding: 0;
+      bottom: 46px;
+   }
+
+
+}

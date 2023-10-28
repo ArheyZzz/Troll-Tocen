@@ -1,5 +1,12 @@
   document.addEventListener("DOMContentLoaded", function(){
     document.getElementById('burger').addEventListener('click', function(){
-        document.querySelector('header').classList.toggle('open')
+        const b = document.querySelector('header');
+        b.classList.toggle('open');
+      if(b.classList.contains('open')){
+        document.querySelector('.troll__play').style.opacity= '.2';
+      }
+      else 
+        document.querySelector('.troll__play').style.opacity= '1';
     })
   })
+
