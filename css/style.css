@@ -218,9 +218,10 @@ body {
 }
 
 .mission .title {
-   font-weight: 700;
+   font-weight: 400;
    font-size: 32px;
    text-transform: uppercase;
+   color: #e8c180;
 }
 
 .mission .descr {
@@ -239,7 +240,6 @@ body {
 
 .mission__card {
    border: 1px solid #e8c180;
-   /* box-shadow: 0px 0px 5px rgba(70, 206, 0, 0.76); */
    padding: 20px 40px 80px;
    margin: 0 15px;
    font-family: 'MuseoModerno', sans-serif;
@@ -249,6 +249,7 @@ body {
    font-size: 18px;
    text-align: center;
    margin-top: 50px;
+   color: #e8c180;
 }
 
 .mission__card .logo {
@@ -269,9 +270,10 @@ body {
 
 
 .benefits__title {
-   font-weight: 700;
+   font-weight: 400;
    font-size: 32px;
    text-transform: uppercase;
+   color: #e8c180;
 }
 
 .benefits__subtitle {
@@ -298,6 +300,7 @@ body {
    margin-left: 30px;
    font-size: 22px;
    font-weight: 400;
+   color: #e8c180;
 }
 
 .benefits__descr p {
@@ -332,8 +335,9 @@ body {
 .text__block h3 {
    text-align: center;
    text-transform: uppercase;
-   font-size: 30px;
-   font-weight: 700;
+   font-size: 32px;
+   font-weight: 400;
+   color: #e8c180;
 }
 
 .text__block ul {
@@ -348,8 +352,10 @@ body {
    padding: 100px 0;
 }
 
-.title {
+.rewards .title {
    text-align: center;
+   color: #e8c180;
+   font-weight: 400;
 }
 
 .rewards__items {
@@ -373,6 +379,11 @@ body {
    margin-left: 30px;
 }
 
+.item__descr h3 {
+   color: #e8c180;
+   font-size: 24px;
+}
+
 .item__descr p,
 .item__descr ul {
    font-size: 22px;
@@ -391,7 +402,10 @@ body {
 
 .roadmap__title {
    margin-top: -40px;
-   font-size: 30px;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 32px;
+   color: #e8c180;
 }
 
 .roadmap__items {
@@ -408,6 +422,7 @@ body {
 
 .roadmap__phase {
    text-align: center;
+   color: #e8c180;
 }
 
 .roadmap__item li {
@@ -440,6 +455,7 @@ ul li.ready:before {
 
 .whywe .title {
    font-size: 32px;
+   color: #e8c180;
 }
 
 .whywe__item {
@@ -471,6 +487,7 @@ ul li.ready:before {
 .partners__title {
    text-transform: uppercase;
    font-size: 32px;
+   color: #e8c180;
 }
 
 .partners__subtitle {
@@ -511,9 +528,10 @@ ul li.ready:before {
    text-align: center;
 }
 
-.title {
+.team .title {
    text-transform: uppercase;
    font-size: 32px;
+   color: #e8c180;
 }
 
 .team_descr {
@@ -1146,48 +1164,35 @@ ul li.ready:before {
 
 }
 
-
-@media (max-width: 320px) {
+/* !- Iphone */
+@media (max-width: 390px) {
    .container {
-      width: 320px;
-   }
-
-   #header {
-      padding: 10px 0 50px;
+      width: 390px;
    }
 
    .troll__play {
-      margin-top: 50px;
+      margin-top: 100px;
       position: relative;
       right: 42px;
    }
 
    .troll__play .logo {
-      width: 300px;
-      height: 150px;
-   }
-
-   .contract__block {
-      margin-top: 100px;
+      width: 350px;
+      height: 175px;
    }
 
    #contract__address,
    #contract__footer {
-      font-size: 12px;
+      font-size: 14px;
    }
 
    .mission {
       padding: 60px 0;
    }
 
-   .mission .title {
-      font-size: 20px;
-   }
-
    .mission .descr {
       margin-top: 20px;
-      font-weight: 300;
-      font-size: 13px;
+      font-size: 16px;
    }
 
    .mission__items {
@@ -1209,7 +1214,7 @@ ul li.ready:before {
    }
 
    .mission__card p {
-      font-size: 14px;
+      font-size: 16px;
       margin-top: 10px;
    }
 
@@ -1250,26 +1255,28 @@ ul li.ready:before {
    }
 
    .boiler__img {
-      width: 300px;
+      width: 350px;
    }
 
    .tokenomics {
       padding: 0 0 40px;
    }
 
-   .tokenomics__block .text__block {
-      margin-top: 30px;
-      max-width: 95%;
-      margin-left: 10px;
+   .text__block h3 {
       font-size: 22px;
-      right: 15px;
+      left: 14px;
+   }
+
+   .tokenomics__block .text__block {
+      max-width: 95%;
+      right: 10px;
+      margin-top: 30px;
    }
 
    .text__block ul {
       margin-top: 20px;
       padding-left: 30px;
       font-size: 18px;
-      text-align: left;
       line-height: 20px;
    }
 
@@ -1280,12 +1287,196 @@ ul li.ready:before {
    .rewards .rewards__item {
       margin-top: 0px;
       text-align: left;
+      width: 360px;
+   }
+
+   .rewards__item .arrow {
+      margin: 20px 146px;
+   }
+
+   .item__descr {
+      text-align: center;
+   }
+
+   .item__descr h3 {
+      font-size: 18px;
+      margin-top: 0px;
+   }
+
+   .item__descr p {
+      margin-top: 16px;
+      padding-left: 30px;
+      font-size: 18px;
+      text-align: left;
+   }
+
+   .item__descr ul {
+      font-size: 18px;
+      padding-left: 30px;
+      text-align: left;
+   }
+
+   .roadmap {
+      padding: 0 0 40px;
+   }
+
+   .roadmap__image .roadmap__img {
+      width: 600px;
+      position: relative;
+      right: 10px;
+      z-index: -1;
+   }
+
+   .roadmap__title {
+      margin-top: -6px;
+      font-size: 20px;
+   }
+
+   .roadmap__item ul {
+      margin-top: 10px;
+      font-size: 20px;
+      font-size: 16px;
+   }
+
+   .roadmap__item li {
+      margin-top: 5px;
+   }
+
+   .roadmap__phase {
+      font-size: 20px;
+      margin-top: -20px;
+   }
+
+   .whywe .title {
+      font-size: 22px;
+   }
+
+   .rocket__img .rocket {
+      width: 350px;
+   }
+
+   .whywe__item {
+      margin-top: 20px;
+   }
+
+   .whywe__descr {
+      margin-top: -10px;
+      max-width: 90%;
+      font-size: 18px;
+      text-align: center;
+   }
+
+   .partners {
+      padding: 50px 0 0;
+   }
+
+   .partners__title {
+      font-size: 22px;
+   }
+
+   .partners__subtitle {
+      margin-top: 16px;
+      font-size: 18px;
+   }
+
+   .troll {
+      margin-top: 20px;
+   }
+
+   .partners__items__top {
+      margin-top: 0;
+   }
+
+   .partner__img {
+      width: 245px;
+      height: 70px;
+   }
+
+   .team {
+      padding: 30px 0;
+   }
+
+   .team .title {
+      font-size: 22px;
+   }
+
+   .team_descr {
+      font-size: 18px;
+      max-width: 90%;
+      margin-top: 22px;
+      text-align: center;
+   }
+
+   .team__items {
+      margin-top: 30px;
+   }
+
+   .social__block {
+      font-size: 30px;
+   }
+
+   .contact__block {
+      font-size: 12px;
+   }
+
+   .contact__block {
+      font-size: 14px;
+   }
+
+}
+
+@media (max-width: 320px) {
+   .container {
+      width: 320px;
+   }
+
+   #header {
+      padding: 10px 0 50px;
+   }
+
+   .troll__play {
+      margin-top: 50px;
+      position: relative;
+      right: 42px;
+   }
+
+   .troll__play .logo {
+      width: 300px;
+      height: 150px;
+   }
+
+   .contract__block {
+      margin-top: 100px;
+   }
+
+   #contract__address,
+   #contract__footer {
+      font-size: 12px;
+   }
+
+   .mission .title {
+      font-size: 20px;
+   }
+
+   .mission .descr {
+      font-weight: 300;
+      font-size: 13px;
+   }
+
+   .mission__card p {
+      font-size: 14px;
+   }
+
+   .boiler__img {
+      width: 300px;
+   }
+
+   .rewards .rewards__item {
       width: 310px;
    }
 
    .rewards__item .arrow {
       margin: 20px 100px;
-
    }
 
    .item__descr h3 {
@@ -1296,7 +1487,6 @@ ul li.ready:before {
 
    .item__descr p {
       margin-top: 16px;
-
       padding-left: 10px;
       font-size: 18px;
    }
@@ -1307,20 +1497,12 @@ ul li.ready:before {
       text-align-last: left;
    }
 
-   .roadmap {
-      padding: 0 0 40px;
-   }
-
    .roadmap__image .roadmap__img {
-      width: 450px;
-      position: relative;
       right: 16px;
-      z-index: -1;
    }
 
    .roadmap__title {
       margin-top: -10px;
-      font-size: 20px;
    }
 
    .roadmap__item {
@@ -1335,16 +1517,6 @@ ul li.ready:before {
       font-size: 18px;
    }
 
-   .roadmap__item ul {
-      margin-top: 10px;
-      font-size: 20px;
-      font-size: 16px;
-   }
-
-   .roadmap__item li {
-      margin-top: 5px;
-   }
-
    ul li.ready:before {
       left: 6px;
    }
@@ -1355,9 +1527,6 @@ ul li.ready:before {
       right: -10px;
    }
 
-   .whywe__item {
-      margin-top: 20px;
-   }
 
    .whywe .title {
       font-size: 20px;
@@ -1368,14 +1537,9 @@ ul li.ready:before {
    }
 
    .whywe__descr {
-      margin-top: 0;
-      max-width: 95%;
       font-size: 16px;
    }
 
-   .partners {
-      padding: 50px 0 0;
-   }
 
    .partners__title {
       font-size: 20px;
@@ -1386,44 +1550,16 @@ ul li.ready:before {
       font-size: 18px;
    }
 
-   .troll {
-      margin-top: 20px;
-   }
-
-   .partners__items__top {
-      margin-top: 0;
-   }
-
    .partners__items__bottom {
       right: 90px;
    }
 
-   .partner__img {
-      width: 245px;
-      height: 70px;
-   }
-
-   .team {
-      padding: 30px 0;
-   }
-
-   .title {
+   .team .title {
       font-size: 20px;
    }
 
    .team_descr {
-      font-size: 18px;
-      max-width: 90%;
-      margin-top: 20px;
-      text-align: left;
-   }
-
-   .team__items {
-      margin-top: 30px;
-   }
-
-   .social__block {
-      font-size: 30px;
+      font-size: 16px;
    }
 
    .contact__block {
