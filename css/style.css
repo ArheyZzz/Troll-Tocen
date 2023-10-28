@@ -2,13 +2,10 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-
 }
-
 
 html {
    overflow-x: hidden;
-
 }
 
 body {
@@ -18,7 +15,6 @@ body {
    width: 100vw;
    overflow-x: hidden;
 }
-
 
 .header {
    padding: 100px 0;
@@ -171,7 +167,6 @@ body {
    align-items: center;
 }
 
-
 .contract__items .line__left1 {
    height: 2px;
    width: 250px;
@@ -265,7 +260,6 @@ body {
    font-weight: 300;
 }
 
-
 /* -------------------------------------- */
 .benefits {
    padding: 100px 0;
@@ -318,7 +312,6 @@ body {
    padding: 100px 0;
    text-align: center;
    color: #eee;
-   /* text-shadow: .5px .5px 1px #e8c180; */
 }
 
 .tokenomics__block {
@@ -329,13 +322,10 @@ body {
 
 .boiler__img {
    width: 600px;
-   /*    position: relative;
-   left: 100px; */
 }
 
 .text__block {
    position: relative;
-   /* left: 100px; */
    max-width: 40%;
 }
 
@@ -372,13 +362,11 @@ body {
    justify-content: center;
    margin-top: 100px;
    width: 500px;
-
 }
 
 .arrow {
    height: 100px;
    border: #e8c180 solid 3px;
-
 }
 
 .item__descr {
@@ -396,15 +384,14 @@ body {
    text-align: center;
 }
 
-
 .roadmap__image {
-
    display: flex;
    justify-content: center;
 }
 
 .roadmap__title {
    margin-top: -40px;
+   font-size: 30px;
 }
 
 .roadmap__items {
@@ -1336,14 +1323,15 @@ ul li.ready:before {
       font-size: 20px;
    }
 
-   .roadmap__items {
-      right: 55px;
+   .roadmap__item {
+      width: 95%;
+      left: 44px;
    }
 
    .roadmap__phase {
       margin-top: -30px;
       position: relative;
-      right: 5px;
+      right: 10px;
       font-size: 18px;
    }
 
@@ -1355,6 +1343,16 @@ ul li.ready:before {
 
    .roadmap__item li {
       margin-top: 5px;
+   }
+
+   ul li.ready:before {
+      left: 6px;
+   }
+
+   .roadmap__item ul li:before {
+      position: relative;
+      top: 8px;
+      right: -10px;
    }
 
    .whywe__item {
@@ -1436,6 +1434,4 @@ ul li.ready:before {
       padding: 0;
       bottom: 46px;
    }
-
-
 }
