@@ -1235,6 +1235,12 @@ ul li.ready:before {
 
 }
 
+@media (max-width: 430px) {
+   .container {
+      width: 410px;
+   }
+}
+
 @media (max-width: 412px) {
    .container {
       width: 410px;
